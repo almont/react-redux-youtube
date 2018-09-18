@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", {"modules": false}],
+    "react"
+  ],
+  "plugins": [
+    ["transform-decorators"],
+    ["module-resolver", {"root": ["./src"]}]
+  ],
+  "env": {
+    "test": {
+      "presets": ["env", "es2015", "react", "stage-2"],
+      "plugins": ["transform-decorators-legacy", "transform-es2015-modules-commonjs", "transform-object-rest-spread", "syntax-decorators"]
+    }
+  }
+}
